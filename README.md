@@ -21,23 +21,23 @@ _Seamlessly synchronize ride orders from Transferz & Koi Ride into Accommtra_
 <div align="center">
 
 ```
-┌─────────────┐     ┌─────────────┐
-│  Transferz  │     │  Koi Ride   │
-│   (50 max)  │     │  (2 days)   │
-└──────┬──────┘     └──────┬──────┘
-       │                   │
-       └─────────┬─────────┘
+              ┌─────────────┐     ┌─────────────┐
+              │  Transferz  │     │  Koi Ride   │
+              │   (50 max)  │     │  (2 days)   │
+              └──────┬──────┘     └──────┬──────┘
+              │                   │
+              └─────────┬─────────┘
                  ▼
-        ┌────────────────┐
-        │  🔄 Transform  │
-        │  Map Vehicles  │
-        │  Format Dates  │
-        └────────┬───────┘
+               ┌────────────────┐
+               │  🔄 Transform  │
+               │  Map Vehicles  │
+               │  Format Dates  │
+               └────────┬───────┘
                  ▼
-        ┌────────────────┐
-        │   Accommtra    │
-        │   Dashboard    │
-        └────────────────┘
+               ┌────────────────┐
+               │   Accommtra    │
+               │   Dashboard    │
+               └────────────────┘
 ```
 
 </div>
@@ -57,28 +57,6 @@ _Seamlessly synchronize ride orders from Transferz & Koi Ride into Accommtra_
 ## ⚙️ Configuration
 
 > **📍 Important:** All settings are at the top of `main.py` for easy updates.
-
-### 🔑 Credentials
-
-```python
-# ═══════════════════════════════════════
-#            TRANSFERZ
-# ═══════════════════════════════════════
-TZ_EMAIL = "haytham97@live.com"
-TZ_PASS  = "ZEuoHFzP78cp"
-
-# ═══════════════════════════════════════
-#             KOI RIDE
-# ═══════════════════════════════════════
-KOI_USER = "Haytham Montana"
-KOI_PASS = "montana123"
-
-# ═══════════════════════════════════════
-#            ACCOMMTRA
-# ═══════════════════════════════════════
-DEST_EMAIL = "haytham97@live.com"
-DEST_PASS  = "tham97"
-```
 
 ### 🏢 Contractor IDs
 
